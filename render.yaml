@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: wordscanner-ai-middleware
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
